@@ -33,4 +33,5 @@
 
 .item:hover {
     cursor: pointer;
+    background-color: rgb(65, 119, 121);
 }
