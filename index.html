@@ -9,23 +9,25 @@
 </head>
 <body>
     <section class="game">
-        <section class="area display-area">
+        <section class="display-area">
             <section class="players-wrapper">
                 <div class="player">
                     <label>Player X -</label>
                     <span class="score">0</span>
                 </div>
-                <div class="jogada">jogada</div>
-                <div class="resultado"></span></div>
                 <div class="player">
                     <label>Player O -</label>
                     <span class="score">0</span>
                 </div>
             </section>
+            <section class="results">
+                <div class="jogada">jogada</div>
+                <div class="resultado"></span></div>
+            </section>
+            <section class="msg-wrapper area">
+                <div class="msg"> Jogo da velha </div>
+            </section>
         </section>
-        <div class="msg-wrapper">
-            <div class="msg"> Start Game </div>
-        </div>
         <section class="square">
             <div data-item="a1" class="item"></div>
             <div data-item="a2" class="item"></div>
@@ -39,11 +41,14 @@
             <div data-item="c2" class="item"></div>
             <div data-item="c3" class="item"></div>
         </section>
-        <div class="area"> board </div>
-        <div class="area action-area">
+        <div class="aviso"></div>
+        <div class="action-area">
             <section class="wrapper btn-wrapper">
                 <div class="tbn">
-                    <button class="reset">Restart Game</button>
+                    <button class="reset">Restaurar</button>
+                </div>
+                <div class="tbn">
+                    <button class="continue">Continuar</button>
                 </div>
             </section>
         </div>
