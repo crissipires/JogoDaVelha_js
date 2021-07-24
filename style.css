@@ -8,12 +8,12 @@ body{
 }
 
 .game {
+    padding-top: 40px;
     margin:auto;
     width: 400px;
     min-height: 400px;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 20% auto;
+    display: flex;
+    flex-direction: column;
     border: 1px solid black;
 }
 
@@ -47,7 +47,9 @@ body{
 }
 
 .player{
-    background-color: chocolate;
+    padding: 5px 10px;
+    background-color: rgba(226, 225, 225, 0.952);
+    border-radius: 20px;
 }
 
 .results{
@@ -69,4 +71,20 @@ body{
     flex-direction: row;
     justify-content: space-around;
     padding: 20px;
+}
+
+.vez{
+    display:none;
+}
+
+.aviso{
+    display: none;
+    position: absolute;
+    padding: 60px;
+    margin-left: 40px;
+    top: 20%;
+    font-size: 2.5em;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 10px;
+    border-style:double;
 }

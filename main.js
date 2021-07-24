@@ -87,9 +87,14 @@ function renderInfo() {
     document.querySelector(".scoreO").innerHTML = placarO;
     if (playing) {
        document.querySelector(".vez").style.display = "block";
-     } else {
-         document.querySelector(".vez").style.display = "none";
-     }
+    } else {
+        document.querySelector(".vez").style.display = "none";
+    }
+    if(warning === ""){
+        document.querySelector(".aviso").style.display = "none";
+    } else {
+        document.querySelector(".aviso").style.display = "block";
+    }
 
 };
 
