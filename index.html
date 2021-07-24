@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo Da Velha</title>
+</head>
+<body>
+    <section class="game">
+        <section class="area display-area">
+            <section class="players-wrapper">
+                <div class="player">
+                    <label>Player X -</label>
+                    <span class="score">0</span>
+                </div>
+                <div class="jogada">Quem vai jogar</div>
+                <div class="player">
+                    <label>Player O -</label>
+                    <span class="score">0</span>
+                </div>
+            </section>
+        </section>
+        <div class="msg-wrapper">
+            <div class="msg"> Start Game </div>
+        </div>
+        <section class="square">
+            <div data-item="a1" class="item"></div>
+            <div data-item="a2" class="item"></div>
+            <div data-item="a3" class="item"></div>
+
+            <div data-item="b1" class="item"></div>
+            <div data-item="b2" class="item"></div>
+            <div data-item="b3" class="item"></div>
+
+            <div data-item="c1" class="item"></div>
+            <div data-item="c2" class="item"></div>
+            <div data-item="c3" class="item"></div>
+        </section>
+        <div class="area"> board </div>
+        <div class="area action-area">
+            <section class="wrapper btn-wrapper">
+                <div class="tbn">
+                    <button class="reset">Restart Game</button>
+                </div>
+            </section>
+        </div>
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
