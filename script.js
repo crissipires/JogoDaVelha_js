@@ -53,7 +53,7 @@ function renderSquare() {
 
 function renderInfo() {
     document.querySelector('.jogada').innerHTML = playerTurn;
-    document.querySelector('.resultado').innerHTML = warning;
+    document.querySelector('.aviso').innerHTML = warning;
 
 }
 
