@@ -45,7 +45,7 @@ function reset() {
 
     for (let i in square) {
         square[i] = "";
-        document.querySelector(`.${i}`).style.background = "cadetblue";
+        document.querySelector(`.${i}`).style.background = "#416b83";
     }
 
     playing = true;
@@ -64,7 +64,7 @@ function continueGame() {
 
     for (let i in square) {
        square[i] = "";
-       document.querySelector(`.${i}`).style.background = "cadetblue";
+       document.querySelector(`.${i}`).style.background = "#416b83";
     }
 
     playing = true;
@@ -88,8 +88,10 @@ function renderInfo() {
     document.querySelector(".scoreO").innerHTML = placarO;
     if (playing) {
        document.querySelector(".vez").style.display = "block";
+        document.querySelector(".jogada").style.display = "block";
     } else {
         document.querySelector(".vez").style.display = "none";
+        document.querySelector(".jogada").style.display = "none";
     }
     if(warning === ""){
         document.querySelector(".aviso").style.display = "none";
@@ -137,7 +139,7 @@ function checkWinnerFor(player){
         let pArray = pos[i].split(",");
         let hasWon = pArray.every(option => square[option] == player)
         if(hasWon) {
-            pArray.forEach(item => document.querySelector(`.${item}`).style.background = "green");
+            pArray.forEach(item => document.querySelector(`.${item}`).style.background = "rgba(80, 177, 80, 0.575)");
             return true;
         }
     } 
