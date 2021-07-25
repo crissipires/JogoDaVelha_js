@@ -78,13 +78,27 @@ body{
 }
 
 .aviso{
+    margin-top: 10px;
     display: none;
-    position: absolute;
-    padding: 60px;
-    margin-left: 40px;
-    top: 20%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     font-size: 2.5em;
-    background-color: rgba(255, 255, 255, 0.534);
+    background-color: rgba(255, 255, 255, 0.808);
     border-radius: 10px;
-    border-style:double;
+}
+
+.vez{
+    padding-right: 8px;
+}
+
+button {
+    padding: 3px 50px;
+    border-radius: 10px;
+    font-weight: bold;
+    border-style: none;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.658);
 }
