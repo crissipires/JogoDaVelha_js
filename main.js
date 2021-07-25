@@ -44,7 +44,7 @@ function reset() {
     newGame();
 
     for (let i in square) {
-        square[i] = '';
+        square[i] = "";
         document.querySelector(`.${i}`).style.background = "cadetblue";
     }
 
@@ -52,9 +52,6 @@ function reset() {
 
     placarX = 0;
     placarO = 0;
-
-    cor.lenght = 0;
-
 
     renderSquare();
     renderInfo();
@@ -71,8 +68,6 @@ function continueGame() {
     }
 
     playing = true;
-
-
 
     renderSquare();
     renderInfo();
