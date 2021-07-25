@@ -45,12 +45,15 @@ function reset() {
 
     for (let i in square) {
         square[i] = '';
+        document.querySelector(`.${i}`).style.background = "cadetblue";
     }
 
     playing = true;
 
     placarX = 0;
     placarO = 0;
+
+    cor.lenght = 0;
 
 
     renderSquare();
@@ -64,9 +67,12 @@ function continueGame() {
 
     for (let i in square) {
        square[i] = "";
+       document.querySelector(`.${i}`).style.background = "cadetblue";
     }
 
     playing = true;
+
+
 
     renderSquare();
     renderInfo();
@@ -105,15 +111,15 @@ function togglePlayer() {
 
 function checkGame() {
     if(checkWinnerFor("x")){
-        warning = 'O x venceu!'
+        warning = 'Vitoria do x'
         playing = false
         placarX += 1;
     } else if (checkWinnerFor('o')){
-        warning = 'O o venceu!'
+        warning = 'Vitoria do o'
         playing = false
         placarO += 1;
     } else if (isFull()){
-        warning = 'O jogo empatou!'
+        warning = 'Empate!'
         playing = false
     };
 };
@@ -134,8 +140,9 @@ function checkWinnerFor(player){
 
     for (let i in pos){
         let pArray = pos[i].split(",");
-        let hasWOn = pArray.every(option => square[option] == player)
-        if(hasWOn) {
+        let hasWon = pArray.every(option => square[option] == player)
+        if(hasWon) {
+            pArray.forEach(item => document.querySelector(`.${item}`).style.background = "green");
             return true;
         }
     } 
@@ -150,3 +157,4 @@ function isFull() {
     }
     return true;
 };
+
